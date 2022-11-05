@@ -55,17 +55,22 @@ let emplyees=
        
         let row="" 
         for( emp of emplyees){
+            // let company= emp.email.substr((emp.email).indexOf("@")+1,emp.email.length-1) 
+
             row=row+ `<tr> 
             
                        <td>  ${emp.id}</td>
-                       <td>  ${emp.first_name}</td>
+                       <td>  ${emp.first_name.toUpperCase()}</td>
                        <td>  ${emp.last_name}</td>
                        <td>  ${emp.email}</td>
                        <td>  ${emp.gender}</td>
                       <td>  ${emp.ip_address}</td>
+                      <td> ${ emp.email.slice((emp.email).indexOf("@")+1,emp.email.indexOf(".")).toUpperCase() }</td>  
            </tr>`
         }
            document.getElementById('empdata').innerHTML=row 
         
     }
-    
+
+    // <td>  ${emp.email.substr((emp.email).indexOf("@")+1,emp.email.length-1) } </td>  
+    // <td> ${company.substr(0,company.indexOf("."))}</td>  
