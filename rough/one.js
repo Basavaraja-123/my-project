@@ -1,176 +1,176 @@
-//Fuction example
-
-
-/*function wish( name){
-    console.log ('hello '+name+' good morning')
-}
-wish('mani') */
-
-
-/*function wish(name='guest') {
-    console.log ( 'hello.. '+name+' good morning')
-}
-wish('sharath')*/
-
-/* function wish( rahul,priya) {
-    console.log (rahul);
-    console.log (priya)
-}
-wish(10,20)  */
-
-
-/*function add (rahul,priya,sonia){
-    console.log (goodmorning)
-    console.log(goodafternoon)
-    console.log(goodnight)
-}
-add (10,20,30)       //  (String is importent here) ,error code check next one why  not error   */ 
-
-
-/*function add (goodmorning,goodafternoon,goodnight){
-    console.log (goodmorning)
-    console.log(goodafternoon)
-    console.log(goodnight)
-}
-add (10,20,30) */
-
-/*function add (a,b){
-    console.log(a+b)
-    // console.log(b)
-}
-add (10,20)
-add(20,30) 
-add (100,200)
-add(1000) // a value is 1000 and b is undifined = number+undifine = Nan */
-
-
-/*function add (a,b,c,d=200){ // d=200 is defult value
-    console.log (a+b+c+d)
-}
-add (10,20,30)           //D is defult value will take cos if we are not passing argument.
-add (10,20,30,40)    */   // D is not take defult value cos we are passing argument.   
-
-
-/*function wish (a,b,c){ 
-
-    console.log( a+b+c)
-}
-wish(1,2,3,4,)  //last argument is not add  in function */
-
-
-/*function emp_details(id, name, sal){
-    console.log( id)
-    console.log(name +'sai') //we can add aditional name or number
-    console.log (sal + 5000)   //we can add aditional name or number
-    //console.log(id + name + sal) 
-}
-emp_details( 101,'rahul',45000)
-emp_details( 102,'priya',55000) */
-
-
-/*function wish( ){
-    return "hello , goodmorning"}
-    var massage = wish ( );
-    console.log (massage) */
-
-
-/*function add (a,b,c,d=10){
-    return a+b+c+d+100 
-}
-    let totl  =add( 10,20,30);
-console.log ( totl)*/
-
-
-/*function wish(msg){
-return "Hello" + msg
-}
-let massage = wish("good morning")
-console.log (massage) */
-
-/*function wish (){
-    return "good morning"
-    console.log ("Hello good night") //after return statement we can't write anything 
-}
-let msg =wish()
-console.log (msg)  */
-
-
-/*function wish (){
-    console.log ("Hello good night") //before return statement we can print
-    return "good morning"  //after return statement we can't write anything 
-}
-let msg =wish()
-console.log (msg) */
-
-
-/*function wish () {
-    console,log("Hello ,good morning")
-    alart ( "hello, good night spleep well")
-}    */
-
-/*function outer (){
-    console.log('outer function')
-    function inner(){
-        console.log ( 'inner function')
-    }
-    inner()    //we calld as reccorcive function it will print number of times 
-    //outer() 
-}
-outer()
-inner()    // it is side fuction,  no reffrence out side fuction       */
+// class Employee{
+// min_bal=500;
+// constructor(emp_Id,emp_Name, emp_Email){
+//     console.log( "constructor will excute automitically")
+//     this.emp_Id=emp_Id;
+//     this.emp_Name=emp_Name;
+//     this.emp_Email= emp_Email;
+// }
+// getEmployeeDtails(){ console.log(`Employee Id ${this.emp_Id} Employee Name ${this.emp_Name} Employee Email ${this.emp_Email}`)}
+// }
+// let e1=new Employee(1001,"abhi" , "abhi@gmail.com")
+// let e2=new Employee( 1002, "adhi","adhi@gmail.com")
+// // console.log (e1);
+// // console.log (e2);
+// e1.getEmployeeDtails()
 
 
 
+// var name=prompt("This is marrage rigistration.   Enter your name:")
+// var age=prompt(" Enter your age:")
+
+// if ( age<18){ alert(" Hey... Bad boy please wait untill cross 18 years. don't be hurry")
+// }
+// else if ( age>60){
+//     alert (" Hello "+name+" sorry..! You are age is Expired, not elgible for marrage . please go and dai ")
+// }
+// else { alert (" Hello "+name+" Thanks for rigistration you will get best match soon" )}
+
+
+// const myNoun = "dog";
+// const myAdjective = "big";
+// const myVerb = "run";
+// const myAdverb = "quickly";
+
+// const sentence = "My "+myNoun+" is "+myAdjective+ " and it "+myVerb+" very fast."
+// console.log(sentence)
+
+
+
+
+// const myArray = [["John", 23], ["cat", 2] ["ramy",43[20,4,5,6]] ];
+// myArray.push(["dog",3])
+// console.log (myArray)
+
+
+// const threeArr = [1, 4, 6];
+
+// const oneDown = threeArr.pop();
+// // console.log(oneDown);
+// console.log(threeArr);
+
+
+// const myArray = [["John", 23], ["cat", 2]];
+// myArray.pop([])
+
+
+
+// function reusableFunction(){
+//   console.log ("Hi World") 
  
-// Array methods example
-
-/*let size =[10,20 ]
-console.log (size.length)
-size.push (38); 
-size.push (55)
-console.log ( size);
-console.log (size.length)
-size.pop()
- console.log(size)
- size.unshift(001)
- console.log (size)
-size.unshift( 10,30)
-console.log (size)
-size.shift( 10,30)
-console.log (size)*/
+// }
+// reusableFunction();
 
 
-/*let num =[10,20,22,33]
-if ( num.length==0){ console.log ( 'empty')}
-else { console.log('No empty')} */
+// Return a Value from a Function with Return
+// function timesFive(n ){
+//   return n*5
+// }
+// console.log(timesFive(6))
 
 
-/*let num =[  ]
-if ( num.length==0){ console.log ( 'empty')}
-else { console.log(' No empty')}  */
+// function test (myCondition) {
+//     if (myCondition) {
+//       return "It was true";}
+//     return "It was false";
+//   }
+//   console.log (test(true));
+//   console.log(test(false));
 
-//how to find  number of array index
-/*let numbers = [10,20,30,40,50,60]
-console.log (numbers.lastIndexOf (numbers[numbers.length -3])) */  // keep chang -3 and check the value
+// function wish(name){
+//     console.log("hello " + name + " good morning")
 
-//how to find indax value with array value
-/*let num = [10,20,30,40,50,'chali']
-console.log( num.indexOf('chali')) */  // keep chang chali and check the value 
-
-//how to find  any perticular indax of value 
-/*let numr = [10,20,30,40,50,'chali']
-console.log( num[numr.length -2 ]) */ // keep chang -2 and check the value
+// }
+// wish("ravi")
 
 
-/*let multi =a => a*100
-console.log( multi(3)) */ // keep chang 3 and check the value 
+// factorial of a number
+// function factorial(num){
+//     result=1
+//     for( var i=2; i<=num;  i++)
+//  result= result*i
+// return result}
+// console.log(" the Factorial of 4 is :"+factorial(10))
 
-/*let multipl =a => a*100
-console.log( multipl(12)) */    // keep chang 12 and check the value
+// function replace(str){
+//     var newStr =str.replaceAll('prasana' , 'vidy')
+//  return newStr
+// }
+// console.log (replace('prasana1 prasana2') )
 
 
-let multipl = (a,b) => { return  a * 100 , b*50 }
-console.log( multipl(10,2))
-console.log ( multipl(20,6))
 
- 
+// function anysong( ){
+//     console.log ("1990s  songs")
+//     console.log( "2000s songs")
+// }
+// setInterval(anysong,3000)
+
+
+// strings time Repetation operater (use for loop or while loop)
+// function stringTime(str,n ){
+//     result=" "
+//     count=1
+// while (count <=n){
+//     result= result + str 
+//     count++}
+//     return result}
+// console.log(stringTime('hello, ', 10))
+// console.log(stringTime('hi, ',3))
+// console.log(stringTime('Good morning, ', 10))
+
+
+
+//Ternary Operator: Is 3 condition is called as ternary oparater, 3 argument given any oprator such type of called ternary operator.
+
+// function  luckySume(a,b,c){
+//     if (a==13){ return 0;}
+//     else if ( b==13) { return a;}
+//     else if (c==13 ){ return a+b;}
+//     else { return a+b+c;}
+// }
+// console.log( luckySume (20,50,13))
+// console.log( luckySume (20,13,34))
+// console.log( luckySume (13,50,17))
+// console.log( luckySume (20,50,44))
+
+
+// Comparison with the Strict Inequality Operator
+// function testStrictNotEqual(val) {
+//     if (val!==17) { 
+//       return " Not Equal";
+//     }
+//     return " Equal";
+//   }
+  
+//  console.log (testStrictNotEqual(17));
+
+// function smailes(pSmail,vSmail ){
+//     if (( pSmail==true && vSmail==true) || (pSmail==false && vSmail==false)){ return true}
+// else { return false}
+// }
+// console.log ("Smail trubal:"+ smailes(true,true));
+// console.log ("Smail trubal:"+ smailes(false,true));
+// console.log ("Smail trubal:"+ smailes(false,false));
+// console.log ("Smail trubal:"+ smailes(true,false));
+
+
+
+//inheritance concept
+// class p{ mony=100     // parant class
+// amount=200}
+
+
+// class c extends p{ mony=500  //it will over write from parant class   //child class
+// }
+// let e= new c ()
+// console.log(e)
+// console.log(e.mony)
+
+// let a=new p()
+// console.log(a.mony)
+// console.log(a)
+
+
+let hero_name = "sudeep"
+module.exports = hero_name

@@ -1,41 +1,99 @@
 <html>
 
 <HEAD>
-    <TItle>GS Studio</TItle>
-    <link rel="stylesheet" href="./Style.css">
+  <TItle>GS Studio</TItle>
+
+  <link rel="stylesheet" href="./Style.css">
 
 
 </HEAD>
+
 <BODY>
-<nav class="navbar navbar-dark bg-primary navbar-expand-lg  ">
-   <h1>GS PHOTO STUDIO</h1>
-   <h5>LOGIN PAGE</h5>                 
-    <div  class="collaps navbar-collapse">
+  <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+    <h1>GS PHOTO STUDIO</h1>
+    <h5>LOGIN PAGE</h5>
+    <div class="collaps navbar-collapse">
       <ul class="navbar-nav ml-auto ">
         <li class="nav-item navbar "><a href="./Index.html" class="cl"> HOME</a> </li>
-        <li class="nav-item navbar "><a href="./Services.html" class="cl">SERVICES</a></li> 
+        <li class="nav-item navbar "><a href="./Services.html" class="cl">SERVICES</a></li>
         <li class="nav-item navbar "><a href="./Contact.html" class="cl">CONTACT US</a> </li>
         <li class="nav-item navbar "><a href="./about.html" class="cl"> ABOUT </a> <br> </li>
         <li class="nav-item navbar "><a href="./Login.html" class="cl"> LOGIN </a> <br> </li>
-        </ul>
-        <label for="Search"></label>
-        <input type="search" placeholder="Search">
+      </ul>
+      <label for="Search"></label>
+      <input type="search" placeholder="Search">
     </div>
-</nav> 
+  </nav>
+
+  <center><h2 id="login">REGISTRATION </h2></center>
+  <hr>
+  <h5 style="margin-left: 5em;" >If you have rigisterd <a href=""> Click here </a> to login.<h6> <br><br>
+
+      <form onsubmit=" return Validate()" action="">
+
+        <label style="margin-right: 8em; margin-left: 3em;"> First name: </label>
+        <input type="text" id='firstName'> <br> <br>
+        <span id="firstMassage" style=" color: red"></span>
+        <label  style="margin-right: 8em;margin-left: 3em;"> Last name: </label>
+        <input type="test">  <br><br>
+        <label style="margin-right: 8em;margin-left: 3em;"> Phone no: </label>
+        <input type="number" id="phone">
+        <span id="phoneMassage" style=" color: red"></span> <br><br>
+        <label style="margin-right: 8.5em;margin-left: 3em;"for=""> Email id:</label> 
+        <input type="email"><br> <br>
+        <label style="margin-right: 8.5em;margin-left: 3em;"> Address:  </label>
+        <input type="massage"><br> <br>
+
+        <label style="margin-right: 9em;margin-left: 3em;"for=""> Gender:  </label>
+        <input value="male"  type="radio" name="gender">
+        <label style="margin-right: 2em;"for=""> Male </label>
+        <input  value="female" type="radio" name="gender">
+        <label for=""> Female</label><br> <br>
+
+        <label style="margin-right: 8em;margin-left: 3em;" for=""> Password:</label>
+        <input id="firstp" type="text" type="password"> <br><br>
+        <label style="margin-right: 4em;margin-left: 3em;" for=""> Conform password</label>
+        <input id="secendp" type="text" type="password"> 
+        <span id="passwMassage" style="color:red"></span><br><br>
 
 
+        <label style="margin-right: 8.5em;margin-left: 3em;" for=""> Address:</label> 
+        <input type="text" placeholder="Ex: # 101, 1st main,2nd cross"> <br><br>
+        <label style="margin-right: 10em;margin-left: 3em;" for=" "> Aria: </label>
+        <input type="text" placeholder="Ex: vivek lyout, Mahadevpura"><br> <br>
+
+        <label style="margin-right: 10em;margin-left: 3em;" for=""> City:</label> <input type="text"> <br><br>
+        <label style="margin-right: 8em;margin-left: 3em;" for=""> Pin code:</label><input type="number"><br> <br>
+        <label style="margin-right: 9.4em;margin-left: 3em;" for=""> state: </label><input type="text"> <br><br>
 
 
+        <!-- <label style="margin-right: 8em;"for="" > Country:
+          <select name="" id="">
+
+            <option value=""> Select </option>
+            <option value=""> India</option>
+            <option value=""> USA</option>
+            <option value=""> UK</option>
+            <option value=""> CHINA</option>
+            <option value=""> CANADA</option>
+            <option value=""> AUSTRALIA</option>
+            <option value=""> PAKISTAN</option>
+            <option value=""> NEPAL</option>
+          </select>
+        </label> <br> <br> -->
+
+        <button style="margin-right: 3em;margin-left: 7em;">cancel </button> &nbsp; &nbsp;
+        <button > Submit</button> <br> <br>
+        
+        <a style="margin-right: 4em;margin-left:5em;"href=""> Forget password</a> &nbsp; &nbsp;
+        <a href=""> Register </a>
+      </form>
 
 
-
-
-
-
-
-
-
+      
 </BODY>
+<script type="text/javascript" src="./Login.js"></script>
+
 
 
 </html>
