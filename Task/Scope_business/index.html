@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Business and solution</title>
+
+   <link rel="stylesheet" type="text/css" href="./style.css" ></link>
+
+  <script src="./index.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div style="display:flex ;text-decoration:dashed ; background-color: blue; color: azure;">
+        <p>Scope Business  Profile</p>
+        
+        <ul style="list-style-type: none;display: flex;">
+           
+            <li style="padding-left: 23px;"> <a href="#" style="color: azure;">Home</a> </li>
+            <li style="padding-left: 23px;"> <a href="#" style="color: azure;">Contact</a> </li>
+            <li style="padding-left: 23px;"> <a href="#" style="color: azure;">Service</a> </li>
+            <li style="padding-left: 23px;"><a href="#" style="color: azure;">About us</a></li>
+            <li style="padding-left: 23px;"><a href="./Contact_list.html" style="color: azure;">Contact List</a></li>
+        </ul>
+    </div>
+        
+    <h2>Business  Profile</h2> <hr>
+    <div>
+        <form  id ="form" name="regform" method="post" onsubmit="return validationForm()">
+           
+            <label for="prf_photo">Upload Profile photo:</label> 
+            <input type="file" id="prf_photo" name="profile" /> <br/> <br/>
+
+            <lable for="f_name"> Full Name:</lable>
+            <input type="text" id="f_name" name="Full_name"  placeholder="Enter the your name"/> <br/> <br/>
+
+            <lable for="Company">Company:</lable>
+            <input type="text" id="Company"  placeholder="Enter company name"/> <br/> <br/> 
+
+            <lable for="Ph_numb" >Contact number:</lable>
+            <input type="text" id="Ph_numb" placeholder="Enter the number"/> <br/> <br/> 
+
+            <lable for="email"> Email Id:</lable>
+            <input type="text" id="email" placeholder="Enter Mail Id "/> <br/> <br/> 
+
+            <lable for="location">Location:</lable>
+            <input type="text" id="location"  placeholder="Enter City name"/> <br/> <br/> 
+
+            <lable for="ty_business">Type of Business:</lable>
+            <select id="ty_business"> 
+                <option>Select.</option>
+                <option>General partnership.</option>
+                <option>Limited partnership.</option>
+                <option>C corporation.</option>
+                <option>Benefit corporation</option>
+                <option>Sole proprietorship</option>
+                <option>Nonprofit</option>
+                <option>Joint venture  </option>
+            </select> <br /><br />
+
+                
+            <button type="submit" >Submit </button>
+             <button type="reset" >Reset </button>
+             <button type="submit" >cancel </button>
+
+        </form>
+    </div>
+
+
+    
+
+
+    
+</body>
+
+<!-- <Script>
+
+    function validationForm () {
+    var f_name= document.form["regform"]["f_name"].value;
+    var compny= document.form["regform"]["Company"].value;
+    var user_email= document.form["regform"]["email"].value;
+    var gndr= document.form["regform"]["gender"].value;
+    var Ph_num= document.form["regform"]["Ph_numb"].value;
+    var loca= document.form["regform"]["location"].value;
+    var ty_business= document.form["regform"]["ty_business"].value;
+
+
+if( f_name==null || f_name==""){
+    alert("Name cannot be blank");
+    return false;
+}
+else if( user_email==null || user_email==""){
+    alert("Email cannot be blank");
+    return false;
+}
+else if( compny==null || compny==""){
+    alert("Company cannot be blank");
+    return false;
+}
+else if( loca==null || loca==""){
+    alert("Location cannot be blank, please enter a location");
+    return false;
+}
+else if( Ph_num==null || Ph_num==""){
+    if (Ph_num<=10) {
+        alert("Please enter a valid number");
+        return false}
+    else if(Ph_num>=10){
+        alert("Please enter a valid number");
+        return false; }
+    else {return true}
+
+}
+else if( (gndr[0].checked==false) && ( gndr[1].checked==false)){
+ alert("Please select a gender");
+ return false;
+}
+else if(ty_business.selectedIndex==0){
+    alert("Please select a Type of Business");
+    return false;
+
+}
+
+}
+</Script> -->
+
+
+</html>

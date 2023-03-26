@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospitality App</title>
+    <link rel="stylesheet" href="./Style.css" />
+    <!-- <script href="./one.js" rel="text/javascript"></script> -->
+</head>
+  <body class="">
+    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+      <h1 class="text-light">SaasAro Hospitality</h1>
+
+      <div class="collaps navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item navbar">
+            <a href="./index.html" class="text-light"> HOME</a>
+          </li>
+          <li class="nav-item navbar">
+            <a href="#" class="text-light">SERVICES</a>
+          </li>
+          <li class="nav-item navbar">
+            <a href="#" class="text-light">CONTACT US</a>
+          </li>
+          <li class="nav-item navbar">
+            <a href="#" class="text-light"> ABOUT </a> <br />
+          </li>
+          <li class="nav-item navbar">
+            <a href="#" class="text-light"> LOGIN </a> <br />
+          </li>
+        </ul>
+        <label for="Search"></label>
+        <input type="search" placeholder="Search" />
+      </div>
+    </nav>
+    <h3 class="text-center">Book Your Room</h3>
+    <hr />
+
+    
+      <div class="">
+        
+            <img class=" img-fluid mr-5 ml-5" 
+              style="width: 1250px"
+              src="https://static.ffx.io/images/$width_620%2C$height_349/t_crop_auto/q_86%2Cf_auto/f14b6d47b25f7f9045c530639f175d10b1c030ae"
+            />
+            <div class=" card-title text-center">
+                 <h2 class=" text-warning">Standard Room</h2> 
+                 <span class="blinktext text-white bg-danger">Only 1 Room is Available Book now hurry..!</span>
+                <hr>
+            </div>
+            <!-- <a href="#" style="width: 1250px" class="btn btn-primary ml-5 mr-5">Book</a>
+            <hr />
+            <a href="#" style="width: 1250px" class="btn btn-primary ml-5 mr-5"
+              >Add to cart</a> -->
+            <ul class="no-bullets">
+              
+                    <li class="list-group text-info" style="width: 1200px"> <h5>A standard room is 15X10 size room but may have a plain outside
+                      view from the rooms window Side of building, back of hotel or 
+                      nothing at all </h5></li>
+                     <li class="list-group">Two Bed Four Pillow</li>
+                     <li class="list-group">For Day 2000</li>
+                     <li class="list-group">TelePhone is Available</li>
+                     <li class="list-group">Wifi is Available</li>
+                     <li class="list-group">Tv is  Available</li>
+                     <li class="list-group">AC is Not Available </li>
+                     <li class="list-group">DoorService is No Door Service</li>
+                     <li class="list-group">Locker is Available</li>
+                     <li class="list-group">Help Line is 24/7 </li>
+                     <li class="list-group">Room Available</li>
+                
+            </ul>
+      </div>
+    </div> <br><br>
+
+    <form name="form"id="form" class="ml-5 mr-5 " class="form" >
+        <h1 class="text-warning text-center"><u class="text-primary">File The Details</u></h1>
+       
+            <!-- <label for="room-type"><b>Room Type:</b><b></label>
+            <select class="form-control" id="room-type" name="room-type">
+                <option></option>
+                <option >Standard Room</option>
+                <option> Premium Room</option>     
+            </select>  -->
+    
+     <label for="name"><b>Name:</b></label>
+     <input type="text" class="form-control" id="name" name="name" required />
+ 
+     <label for="email"><b>Email:</b></label>
+     <input type="email" class="form-control" id="email" name="email" required />
+ 
+     <label for="phone"><b>Phone:</b></label>
+     <input type="tel" class="form-control" id="phone" name="phone" required />
+
+     <label for="address"><b>Address</b></label>
+     <input type="text" class="form-control" id="address" name="phone" required />
+
+
+     <label for="check-in"><b>From  Date:</b></label>
+     <input type="date" class="form-control" id="fromDate" name="fromDate" required />
+
+     <label for="check-out"><b></b>To Date:</label>
+     <input type="date" class="form-control" id="toDate" name="fromDate" required />
+
+     <br>
+ 
+   
+       <a  id="submit" href="./cart.html" style="width: 610px" class="btn btn-primary" >Book</a>
+
+       <a  id="addCart" href="./cart.html" style="width: 610px" class="btn btn-primary">Add to cart</a>
+ </div> 
+
+</form> <br>  <br> <br> <br>
+
+
+
+
+  
+  </body>
+
+  <script >
+    const form1 =document.querySelector(".form");
+  
+    // var form = document.getElementById('form');
+    
+    form1.addEventListener("submit", event =>{
+        // auto submision of the form
+    
+        event.preventDefault();
+    
+        const formData = new FormData(form1);
+        const data=object.formEntries(formData);
+        console.log(data)
+
+        fetch("./one.json",{
+    method : "POST",
+   
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+      body:JSON.stringify(data)
+  })
+  .then(res=>res.json())
+  .then(data=>console.log(data))
+  .catch(error=>console.log(error));
+    })
+  
+  </script>
+</html>

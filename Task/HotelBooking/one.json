@@ -1,0 +1,31 @@
+{
+    "success": true,
+    "data": [
+        {
+            "id": 1,
+            "image":"",
+            "name": "Premium Room",
+            "description": "A premium room has a great view from the window River, city, Park,sunlight",
+            "price": 4000,
+             "telePhone":true,
+             "wifi": true,
+             "tv": true,
+             "doorService": true,
+             "locker": true,
+            "roomAvailable": true
+        },
+        {
+            "id": 2,
+            "image":"",
+            "name": " Standard Room",
+            "description": " A standard room is the exact same size room but may have a plain outside view from the rooms window  Side of building, back of hotel or nothing at all",
+            "price": 2000,
+            "telePhone":true,
+             "wifi": false,
+             "tv": true,
+             "doorService": false,
+             "locker": true,
+            "roomAvailable": false
+        }
+    ]
+}
